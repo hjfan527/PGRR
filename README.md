@@ -9,7 +9,7 @@ Align your query reads to the PGRR using a standard sequencing alignment tool, s
 ```
 # Align a paired read to PGRR
 module load bowtie2
-bowtie2 --no-unal --threads $nthreads -x PGRR.fasta -1 $forward_read -2 $reverse_read --very-sensitive-local -S $result.sam
+bowtie2 --no-unal -x PGRR.fasta -1 $forward_read -2 $reverse_read --very-sensitive-local -S $result.sam
 ```
 
 ## Citation
